@@ -64,6 +64,6 @@
   "nxl-theme@@nxl-heading-underline": true,
   "nxl-theme@@file-line-width": 860,
   "nxl-theme@@h1-align": "nxl-h1-align-center",
-  "nxl-theme@@paragraph-indent": false,
+  "nxl-theme@@paragraph-indent": true,
   "nxl-theme@@palette-settings": "nxl-palette-orange-heart"
 }

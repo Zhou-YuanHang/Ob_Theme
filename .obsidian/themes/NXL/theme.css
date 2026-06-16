@@ -594,7 +594,7 @@ body.nxl-content-card .markdown-source-view.mod-cm6 .cm-sizer {
 
 /* Paragraph indent toggle */
 body.paragraph-indent .markdown-preview-view p,
-body.paragraph-indent .markdown-source-view .cm-line { text-indent: 2em; }
+body.paragraph-indent .markdown-source-view .cm-line:not(.HyperMD-header):not(.HyperMD-codeblock) { text-indent: 2em; }
 
 /* ==========================================================
    LINKS

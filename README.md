@@ -18,8 +18,8 @@
 ### NXL 主题特性
 
 - **双配色方案**：通过 Style Settings 切换
-  - **Ink**（Blue Topaz 风格，白底蓝强调）
-  - **Orange Heart**（橙红暖色 + 衬线字体 + 特殊 H2 标签样式）
+- **Ink**（Blue Topaz 风格，白底蓝强调）
+- **Orange Heart**（橙红暖色 + 衬线字体 + 特殊 H2 标签样式）
 - **Style Settings 全面支持**：无需手写 CSS，在设置面板即可切换配色、调整字体、开关装饰、覆盖颜色
 - **bloom-stone 装饰风格**：背景渐变、页面卡片、标题下划线（H1 虚线 / H2-H4 实线）、代码块 Mac 圆点
 - **H1 对齐**：左对齐 / 居中 / 右对齐
