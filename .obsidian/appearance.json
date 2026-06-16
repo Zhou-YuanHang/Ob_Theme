@@ -1,8 +1,9 @@
 {
-  "cssTheme": "Blue Topaz",
+  "cssTheme": "NXL",
   "baseFontSizeAction": true,
   "baseFontSize": 16,
   "enabledCssSnippets": [
     "bloom-stone"
-  ]
+  ],
+  "accentColor": ""
 }
