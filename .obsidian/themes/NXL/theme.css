@@ -214,44 +214,51 @@ settings:
     id: callout-info
     title: Info
     type: variable-themed-color
-    format: rgb
-    default: 91, 156, 179
+    format: rgb-values
+    default-light: '#5B9CB3'
+    default-dark: '#5B9CB3'
   -
     id: callout-tip
     title: Tip
     type: variable-themed-color
-    format: rgb
-    default: 87, 158, 128
+    format: rgb-values
+    default-light: '#579E80'
+    default-dark: '#579E80'
   -
     id: callout-success
     title: Success
     type: variable-themed-color
-    format: rgb
-    default: 87, 158, 128
+    format: rgb-values
+    default-light: '#579E80'
+    default-dark: '#579E80'
   -
     id: callout-warning
     title: Warning
     type: variable-themed-color
-    format: rgb
-    default: 203, 166, 88
+    format: rgb-values
+    default-light: '#CBA658'
+    default-dark: '#CBA658'
   -
     id: callout-important
     title: Important
     type: variable-themed-color
-    format: rgb
-    default: 168, 130, 200
+    format: rgb-values
+    default-light: '#A882C8'
+    default-dark: '#A882C8'
   -
     id: callout-error
     title: Error
     type: variable-themed-color
-    format: rgb
-    default: 184, 64, 102
+    format: rgb-values
+    default-light: '#B84066'
+    default-dark: '#B84066'
   -
     id: callout-question
     title: Question
     type: variable-themed-color
-    format: rgb
-    default: 203, 166, 88
+    format: rgb-values
+    default-light: '#CBA658'
+    default-dark: '#CBA658'
 */
 
 /* ==========================================================
