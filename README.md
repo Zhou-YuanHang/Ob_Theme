@@ -42,6 +42,7 @@
 | **Recent Files** | 显示最近打开的文件列表 |
 | **Cycle Through Panes** | 使用快捷键循环切换面板 |
 | **Obsidian Linter** | Markdown 文件格式化与 lint 检查 |
+| **Open Tab Settings** | 在新标签页中打开设置面板 |
 
 ---
 
