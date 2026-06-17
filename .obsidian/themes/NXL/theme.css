@@ -238,9 +238,8 @@ settings:
 body {
   --nxl-font-sans: var(--font-family-text, "MiSans", "PingFang SC", "Microsoft YaHei", sans-serif);
   --nxl-font-mono: var(--font-family-mono, ui-monospace, "SF Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace);
-  --font-text: var(--nxl-font-sans);
+  --font-text: var(--font-family-text, "MiSans", "PingFang SC", "Microsoft YaHei", sans-serif);
   --font-monospace: var(--nxl-font-mono);
-  --font-interface: var(--nxl-font-sans);
 
   --nxl-space-unit: 8px;
   --nxl-space-2xs: calc(var(--nxl-space-unit) * 0.5);
@@ -435,8 +434,6 @@ body.nxl-palette-orange-heart.theme-dark {
 /* 衬线字体 */
 body.nxl-palette-orange-heart {
   --nxl-font-sans: "Optima", "PingFang SC", "PingFangTC-light", Cambria, Cochin, Georgia, "Times New Roman", serif;
-  --font-text: var(--nxl-font-sans);
-  --font-interface: var(--nxl-font-sans);
 }
 
 /* H2 标签式装饰 */
@@ -524,6 +521,14 @@ body {
 body {
   font-family: var(--nxl-font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+/* Apply theme font to content containers (ref: Blue Topaz) */
+.markdown-preview-view,
+.markdown-preview-view .markdown-rendered,
+.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-source-view {
+  font-family: var(--font-text);
 }
 
 /* Use ::before pseudo-element so the gradient sits behind all content
@@ -954,6 +959,25 @@ body.nxl-code-mac-dots .HyperMD-codeblock.HyperMD-codeblock-begin.HyperMD-codebl
 .search-result-file-title { font-weight: 600; }
 
 /* ==========================================================
-   GLOBAL TRANSITION
+   INTERACTIVE TRANSITION
+   (Only on content interactive elements, not UI chrome)
    ========================================================== */
-* { transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+.markdown-rendered a,
+.cm-hmd-internal-link,
+.cm-underline,
+.tag,
+button:not(.clickable-icon):not(.mod-cta):not(.mod-warning) {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================
+   TOOLTIP — ensure text renders with a reliable fallback font
+   ========================================================== */
+.tooltip {
+  color: var(--text-normal);
+  background: var(--background-modifier-message);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  word-break: keep-all;
+}
