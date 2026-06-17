@@ -39,6 +39,9 @@
 | **Easy Typing** | 优化中文输入体验，自动加空格、修正标点 |
 | **Table Editor** | 增强的表格编辑功能 |
 | **OZ Clear Unused Images** | 清理未使用的图片附件 |
+| **Recent Files** | 显示最近打开的文件列表 |
+| **Cycle Through Panes** | 使用快捷键循环切换面板 |
+| **Obsidian Linter** | Markdown 文件格式化与 lint 检查 |
 
 ---
 
