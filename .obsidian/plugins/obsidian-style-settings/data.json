@@ -58,13 +58,7 @@
   "bloom-stone@@bloom-content-card": true,
   "bloom-stone@@bloom-bg-gradient": true,
   "mytheme-bloom@@content-card": true,
-  "nxl-theme@@nxl-code-mac-dots": true,
-  "nxl-theme@@nxl-content-card": true,
-  "nxl-theme@@nxl-heading-underline": true,
-  "nxl-theme@@file-line-width": 1200,
-  "nxl-theme@@h1-align": "nxl-h1-align-center",
   "nxl-theme@@paragraph-indent": true,
-  "nxl-theme@@palette-settings": "nxl-palette-ink",
-  "nxl-theme@@font-family-text": "\"霞鹜文楷\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif",
-  "nxl-theme@@nxl-bg-gradient": true
+  "nxl-theme@@nxl-image-center": true,
+  "nxl-theme@@file-line-width": 1200
 }

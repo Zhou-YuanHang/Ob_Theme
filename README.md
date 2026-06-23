@@ -20,6 +20,7 @@
 - **Style Settings 全面支持**：无需手写 CSS，在设置面板即可切换配色、调整字体、开关装饰、覆盖颜色
 - **字体设置**：支持独立设置界面字体和正文字体，优先级：Style Settings 设置 > Obsidian 内置字体设置 > 主题默认值
 - **bloom-stone 装饰风格**：背景渐变、页面卡片、标题下划线（H1 虚线 / H2-H4 实线）、代码块 Mac 圆点
+- **图片居中**：支持图片自动居中显示，可通过 Style Settings 开关控制，默认开启
 - **H1 对齐**：左对齐 / 居中 / 右对齐
 - **颜色覆盖**：可单独自定义强调色、内联代码色、加粗/斜体颜色
 
@@ -37,8 +38,8 @@
 | **Table Editor**           | 增强的表格编辑功能                |
 | **OZ Clear Unused Images** | 清理未使用的图片附件               |
 | **Recent Files**           | 显示最近打开的文件列表              |
-| **tab-switcher**           | 快捷键循环切换面板               |
-| **mousewheel-image-zoom**  | 鼠标滚轮缩放图片              |
+| **tab-switcher**           | 快捷键循环切换面板                |
+| **mousewheel-image-zoom**  | 鼠标滚轮缩放图片                 |
 | **Obsidian Linter**        | Markdown 文件格式化与 lint 检查  |
 
 ---
@@ -80,6 +81,7 @@ Css/                      # 额外样式源文件（空，备用）
 
 | 日期 | 版本 | 内容 |
 |------|------|------|
+| 2026-06 | — | 添加图片居中功能开关（默认开启）；调整默认设置：首行缩进默认打开，内容区域宽度默认1200px，可选范围扩大至300-1800px |
 | 2025-07 | — | 移除 Blue Topaz、Composer、MyTheme 主题，仅保留 NXL；新增界面字体设置（Style Settings）；Orange Heart 默认界面字体统一为 MiSans；字体变量接入 Obsidian 内置 `--font-interface-override` / `--font-text-override`；移除图片居中开关；内置 MiSans 字体路径统一为 `NXL/fonts/` |
 | 2025-06 | — | 重构字体架构：参照 Blue Topaz，`--font-text` 直接设置、`--font-interface` 不再覆盖、内容容器 `font-family: var(--font-text)`；修复 tooltip 矩形框问题（颜色改用 `--text-normal`，移除全局 `*` 过渡规则） |
 

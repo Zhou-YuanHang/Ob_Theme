@@ -128,9 +128,9 @@ settings:
     title: 内容区域宽度
     description: 编辑区和阅读区的最大行宽
     type: variable-number-slider
-    default: 860
-    min: 420
-    max: 1200
+    default: 1200
+    min: 300
+    max: 1800
     format: px
     step: 1
   -
@@ -155,7 +155,7 @@ settings:
     title: 段落首行缩进
     description: 段落首行自动缩进两个字符
     type: class-toggle
-    default: false
+    default: true
   -
     id: decoration-settings
     title: ✨ 装饰样式
@@ -185,6 +185,12 @@ settings:
     id: nxl-code-mac-dots
     title: 代码块 Mac 风格圆点
     description: 代码块顶部显示红黄绿三色圆点
+    type: class-toggle
+    default: true
+  -
+    id: nxl-image-center
+    title: 图片居中
+    description: 所有图片默认居中显示
     type: class-toggle
     default: true
   -
@@ -317,7 +323,7 @@ body {
   --nxl-bold-color: var(--text-normal);
   --nxl-italic-color: var(--text-normal);
 
-  --file-line-width: var(--file-line-width-override, 860px);
+  --file-line-width: var(--file-line-width-override, 1200px);
 
   /* ===== Ink 配色（Blue Topaz 默认风格）===== */
   --nxl-accent: oklch(55% 0.18 260);
@@ -615,6 +621,7 @@ body.theme-dark.nxl-bg-gradient::before {
    ========================================================== */
 body.nxl-content-card .markdown-preview-view {
   margin: 32px auto;
+  max-width: calc(var(--file-line-width) + var(--nxl-space-xl) * 2) !important;
   padding: var(--nxl-space-2xl) var(--nxl-space-xl) var(--nxl-space-3xl);
   background: linear-gradient(180deg, color-mix(in oklch, var(--text-accent), transparent 92%), transparent 460px),
     linear-gradient(120deg, oklch(100% 0 0 / 70%), transparent 70%);
@@ -906,6 +913,90 @@ body.nxl-code-mac-dots .HyperMD-codeblock.HyperMD-codeblock-begin.HyperMD-codebl
   max-width: 100%; height: auto;
   border-radius: 14px; box-shadow: var(--nxl-shadow);
   display: block; margin: 1.5em 0;
+}
+
+/* ============================================================
+   图片居中（默认所有图片居中显示，可在 Style Settings 中关闭）
+   ============================================================ */
+
+/* 阅读视图 - 图片居中 */
+body.nxl-image-center .markdown-preview-view .image-embed {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 50% !important;
+}
+body.nxl-image-center .markdown-preview-view .image-embed img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+}
+
+/* 编辑视图 - 图片居中 */
+body.nxl-image-center .markdown-source-view.mod-cm6 .image-embed {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 50% !important;
+}
+body.nxl-image-center .markdown-source-view.mod-cm6 .image-embed img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+}
+
+/* 编辑视图 - #pic_center 标记 */
+body.nxl-image-center .markdown-source-view.mod-cm6.is-live-preview .image-embed[src$="center"] img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+/* 编辑视图 - #pic_left 标记 */
+body.nxl-image-center .markdown-source-view.mod-cm6.is-live-preview .image-embed[src$="left"] {
+    display: block !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    width: 50% !important;
+}
+body.nxl-image-center .markdown-source-view.mod-cm6.is-live-preview .image-embed[src$="left"] img {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+/* 编辑视图 - #pic_right 标记 */
+body.nxl-image-center .markdown-source-view.mod-cm6.is-live-preview .image-embed[src$="right"] {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    width: 50% !important;
+}
+body.nxl-image-center .markdown-source-view.mod-cm6.is-live-preview .image-embed[src$="right"] img {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+/* 实时编辑模式 - 图片居左 */
+.markdown-source-view.mod-cm6.is-live-preview .image-embed[src$="left"] {
+    display: block !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    width: 50% !important;
+}
+.markdown-source-view.mod-cm6.is-live-preview .image-embed[src$="left"] img {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+/* 实时编辑模式 - 图片居右 */
+.markdown-source-view.mod-cm6.is-live-preview .image-embed[src$="right"] {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    width: 50% !important;
+}
+.markdown-source-view.mod-cm6.is-live-preview .image-embed[src$="right"] img {
+    margin-left: auto !important;
+    margin-right: 0 !important;
 }
 
 /* ==========================================================
