@@ -280,21 +280,21 @@ settings:
 /* --- Font Face (MiSans) --- */
 @font-face {
   font-family: "MiSans";
-  src: url("./bloom/fonts/MiSans-Regular.ttf") format("truetype");
+  src: url("./fonts/MiSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "MiSans";
-  src: url("./bloom/fonts/MiSans-Medium.ttf") format("truetype");
+  src: url("./fonts/MiSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "MiSans";
-  src: url("./bloom/fonts/MiSans-Semibold.ttf") format("truetype");
+  src: url("./fonts/MiSans-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;

@@ -63,8 +63,11 @@
 .obsidian/
 ├── themes/
 │   └── NXL/              # 自建主题
-├── plugins/              # 已安装的社区插件
-└── appearance.json       # 外观配置（默认主题: NXL）
+│       ├── theme.css
+│       ├── manifest.json
+│       └── fonts/        # 内置 MiSans 字体
+├── plugins/          # 已安装的社区插件
+└── appearance.json   # 外观配置（默认主题: NXL）
 
 Css/                      # 额外样式源文件（空，备用）
 ```
@@ -77,8 +80,7 @@ Css/                      # 额外样式源文件（空，备用）
 
 | 日期 | 版本 | 内容 |
 |------|------|------|
-| 2025-07 | — | 移除 Blue Topaz、Composer、MyTheme 主题，仅保留 NXL |
-| 2025-07 | — | 新增界面字体设置（Style Settings）；Orange Heart 默认界面字体统一为 MiSans；字体变量接入 Obsidian 内置 `--font-interface-override` / `--font-text-override`；新增图片居中开关（默认开启） |
+| 2025-07 | — | 移除 Blue Topaz、Composer、MyTheme 主题，仅保留 NXL；新增界面字体设置（Style Settings）；Orange Heart 默认界面字体统一为 MiSans；字体变量接入 Obsidian 内置 `--font-interface-override` / `--font-text-override`；新增图片居中开关（默认开启）；内置 MiSans 字体路径统一为 `NXL/fonts/` |
 | 2025-06 | — | 重构字体架构：参照 Blue Topaz，`--font-text` 直接设置、`--font-interface` 不再覆盖、内容容器 `font-family: var(--font-text)`；修复 tooltip 矩形框问题（颜色改用 `--text-normal`，移除全局 `*` 过渡规则） |
 
 *个人配置仓库，持续更新中。*

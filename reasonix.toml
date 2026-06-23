@@ -82,7 +82,7 @@ enabled = true   # language server tools; servers launch lazily when used
 # disabled_skills = ["review"]   # hide noisy or unwanted skills
 
 [permissions]
-allow = ["Bash(New-Item -ItemType:*)", "Edit"]
+allow = ["Bash(New-Item -ItemType:*)", "Edit", "Bash(Move-Item \"C:\\Users\\25313\\Desktop\\Ob_Theme\\.obsidian\\themes\\NXL\\bloom\\fonts\\*.ttf\":*)"]
 [sandbox]
 # Confine tool blast radius. File-writers (write_file/edit_file/multi_edit/move_file)
 # may only write under workspace_root (empty = current dir) + allow_write.
