@@ -62,8 +62,9 @@
   "nxl-theme@@nxl-code-mac-dots": true,
   "nxl-theme@@nxl-content-card": true,
   "nxl-theme@@nxl-heading-underline": true,
-  "nxl-theme@@file-line-width": 860,
+  "nxl-theme@@file-line-width": 1200,
   "nxl-theme@@h1-align": "nxl-h1-align-center",
   "nxl-theme@@paragraph-indent": true,
-  "nxl-theme@@palette-settings": "nxl-palette-orange-heart"
+  "nxl-theme@@palette-settings": "nxl-palette-orange-heart",
+  "nxl-theme@@font-family-text": "\"霞鹜文楷\", \"PingFang SC\", \"Microsoft YaHei\", sans-serif"
 }

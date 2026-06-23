@@ -6,5 +6,8 @@
   "cmdr",
   "oz-clear-unused-images",
   "table-editor-obsidian",
-  "open-in-new-tab"
+  "recent-files-obsidian",
+  "cycle-through-panes",
+  "mousewheel-image-zoom",
+  "obsidian-linter"
 ]

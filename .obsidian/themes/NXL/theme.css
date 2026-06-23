@@ -32,6 +32,12 @@ settings:
     level: 2
     collapsed: true
   -
+    id: font-family-interface
+    title: 界面字体
+    description: 侧边栏、标签栏等界面元素的字体（需重启生效）
+    type: variable-text
+    default: '"MiSans", "PingFang SC", "Microsoft YaHei", sans-serif'
+  -
     id: font-family-text
     title: 正文字体
     description: 编辑器与阅读模式的正文（需重启生效）
@@ -182,6 +188,11 @@ settings:
     type: class-toggle
     default: true
   -
+    id: nxl-image-center
+    title: 图片居中
+    description: 阅读模式中的图片水平居中显示
+    type: class-toggle
+    default: true
   -
     id: nxl-accent
     title: 强调色（覆盖配色默认值）
@@ -293,9 +304,9 @@ settings:
    SHARED NON-COLOR VARIABLES
    ========================================================== */
 body {
-  --nxl-font-sans: var(--font-family-text, "MiSans", "PingFang SC", "Microsoft YaHei", sans-serif);
+  --nxl-font-sans: var(--font-family-interface, var(--font-interface-override, "MiSans", "PingFang SC", "Microsoft YaHei", sans-serif));
   --nxl-font-mono: var(--font-family-mono, ui-monospace, "SF Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace);
-  --font-text: var(--font-family-text, "MiSans", "PingFang SC", "Microsoft YaHei", sans-serif);
+  --font-text: var(--font-family-text, var(--font-text-override, "MiSans", "PingFang SC", "Microsoft YaHei", sans-serif));
   --font-monospace: var(--nxl-font-mono);
 
   --nxl-space-unit: 8px;
@@ -488,10 +499,6 @@ body.nxl-palette-orange-heart.theme-dark {
 }
 
 /* Orange Heart 特有形变样式 */
-/* 衬线字体 */
-body.nxl-palette-orange-heart {
-  --nxl-font-sans: "Optima", "PingFang SC", "PingFangTC-light", Cambria, Cochin, Georgia, "Times New Roman", serif;
-}
 
 /* H2 标签式装饰 */
 body.nxl-palette-orange-heart .markdown-rendered h2 {
@@ -904,7 +911,11 @@ body.nxl-code-mac-dots .HyperMD-codeblock.HyperMD-codeblock-begin.HyperMD-codebl
 .markdown-rendered img {
   max-width: 100%; height: auto;
   border-radius: 14px; box-shadow: var(--nxl-shadow);
-  display: block; margin: 1.5em auto;
+  display: block; margin: 1.5em 0;
+}
+body.nxl-image-center .markdown-rendered img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ==========================================================

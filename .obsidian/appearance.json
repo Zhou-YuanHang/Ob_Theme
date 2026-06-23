@@ -5,5 +5,8 @@
   "enabledCssSnippets": [
     "bloom-stone"
   ],
-  "accentColor": ""
+  "accentColor": "",
+  "interfaceFontFamily": "",
+  "textFontFamily": "霞鹜文楷",
+  "nativeMenus": false
 }
