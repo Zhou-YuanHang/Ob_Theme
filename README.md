@@ -37,9 +37,9 @@
 | **Table Editor**           | 增强的表格编辑功能                |
 | **OZ Clear Unused Images** | 清理未使用的图片附件               |
 | **Recent Files**           | 显示最近打开的文件列表              |
-| **Cycle Through Panes**    | 使用快捷键循环切换面板              |
+| **tab-switcher**           | 快捷键循环切换面板               |
+| **mousewheel-image-zoom**  | 鼠标滚轮缩放图片              |
 | **Obsidian Linter**        | Markdown 文件格式化与 lint 检查  |
-| **Open Tab Settings**      | 在新标签页中打开设置面板             |
 
 ---
 
