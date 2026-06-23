@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "README"
             }
+          },
+          {
+            "id": "5002a685b73f2876",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,8 +99,7 @@
               "title": "Recent files"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -193,13 +207,16 @@
       "bases:新建数据库": false
     }
   },
-  "active": "120986c191ebfe66",
+  "active": "5002a685b73f2876",
   "lastOpenFiles": [
+    "图片居中测试.md",
+    "README.md",
+    "assets/Pasted image 20260624010922.png",
+    "assets",
     "Css/orangeheart.css",
     "Css",
     "新建文件夹",
     "reasonix.toml",
-    "README.md",
     "新建 Markdown File.md",
     "欢迎.md",
     "#1.md",
@@ -207,8 +224,6 @@
     "MyTheme/bloom-verdant.css",
     "MyTheme/bloom-stone-dark.css",
     "MyTheme/bloom-stone.css",
-    "MyTheme/bloom-spring-dark.css",
-    "MyTheme/bloom-spring.css",
-    "MyTheme/bloom-ripple-dark.css"
+    "MyTheme/bloom-spring-dark.css"
   ]
 }

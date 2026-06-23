@@ -188,12 +188,6 @@ settings:
     type: class-toggle
     default: true
   -
-    id: nxl-image-center
-    title: 图片居中
-    description: 阅读模式中的图片水平居中显示
-    type: class-toggle
-    default: true
-  -
     id: nxl-accent
     title: 强调色（覆盖配色默认值）
     type: variable-themed-color
@@ -912,10 +906,6 @@ body.nxl-code-mac-dots .HyperMD-codeblock.HyperMD-codeblock-begin.HyperMD-codebl
   max-width: 100%; height: auto;
   border-radius: 14px; box-shadow: var(--nxl-shadow);
   display: block; margin: 1.5em 0;
-}
-body.nxl-image-center .markdown-rendered img {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* ==========================================================
