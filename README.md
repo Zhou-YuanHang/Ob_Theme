@@ -6,9 +6,9 @@
 
 ## 🎨 主题
 
-| 主题         | 说明                                                    |
-| ---------- | ----------------------------------------------------- |
-| **NXL**    | 自建主题，支持双配色方案 + Style Settings 全面调节 + bloom-stone 装饰特性 |
+|   主题    |                          说明                           |
+| :-----: | :---------------------------------------------------: |
+| **NXL** | 自建主题，支持双配色方案 + Style Settings 全面调节 + bloom-stone 装饰特性 |
 
 当前默认启用主题：**NXL**
 
@@ -28,19 +28,19 @@
 
 ## 🔌 已集成插件
 
-| 插件                         | 说明                       |
-| -------------------------- | ------------------------ |
-| **Style Settings**         | 主题样式可视化调节面板（NXL 的核心依赖）   |
-| **Dataview**               | 将仓库视为数据库，支持类 SQL 查询和动态列表 |
-| **Editing Toolbar**        | 编辑模式下提供浮动格式工具栏           |
-| **cmdr**                   | 自定义 Obsidian 界面中的命令按钮    |
-| **Easy Typing**            | 优化中文输入体验，自动加空格、修正标点      |
-| **Table Editor**           | 增强的表格编辑功能                |
-| **OZ Clear Unused Images** | 清理未使用的图片附件               |
-| **Recent Files**           | 显示最近打开的文件列表              |
-| **tab-switcher**           | 快捷键循环切换面板                |
-| **mousewheel-image-zoom**  | 鼠标滚轮缩放图片                 |
-| **Obsidian Linter**        | Markdown 文件格式化与 lint 检查  |
+|            插件            |                    说明                     |
+|:--------------------------:|:-------------------------------------------:|
+|     **Style Settings**     |  主题样式可视化调节面板（NXL 的核心依赖）   |
+|        **Dataview**        | 将仓库视为数据库，支持类 SQL 查询和动态列表 |
+|    **Editing Toolbar**     |        编辑模式下提供浮动格式工具栏         |
+|          **cmdr**          |      自定义 Obsidian 界面中的命令按钮       |
+|      **Easy Typing**       |   优化中文输入体验，自动加空格、修正标点    |
+|      **Table Editor**      |             增强的表格编辑功能              |
+| **OZ Clear Unused Images** |            清理未使用的图片附件             |
+|      **Recent Files**      |           显示最近打开的文件列表            |
+|      **tab-switcher**      |             快捷键循环切换面板              |
+| **mousewheel-image-zoom**  |              鼠标滚轮缩放图片               |
+|    **Obsidian Linter**     |       Markdown 文件格式化与 lint 检查       |
 
 ---
 
@@ -79,10 +79,10 @@ Css/                      # 额外样式源文件（空，备用）
 
 ## 📝 更新日志
 
-| 日期 | 版本 | 内容 |
-|------|------|------|
-| 2026-06 | — | 添加图片居中功能开关（默认开启）；调整默认设置：首行缩进默认打开，内容区域宽度默认1200px，可选范围扩大至300-1800px |
-| 2025-07 | — | 移除 Blue Topaz、Composer、MyTheme 主题，仅保留 NXL；新增界面字体设置（Style Settings）；Orange Heart 默认界面字体统一为 MiSans；字体变量接入 Obsidian 内置 `--font-interface-override` / `--font-text-override`；移除图片居中开关；内置 MiSans 字体路径统一为 `NXL/fonts/` |
-| 2025-06 | — | 重构字体架构：参照 Blue Topaz，`--font-text` 直接设置、`--font-interface` 不再覆盖、内容容器 `font-family: var(--font-text)`；修复 tooltip 矩形框问题（颜色改用 `--text-normal`，移除全局 `*` 过渡规则） |
+|  日期   | 版本 | 内容                                                                                                                                                                                                                                                                        |
+|:-------:| ---- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-06 | —    | 添加图片居中功能开关（默认开启）；调整默认设置：首行缩进默认打开，内容区域宽度默认1200px，可选范围扩大至300-1800px                                                                                                                                                          |
+| 2025-07 | —    | 移除 Blue Topaz、Composer、MyTheme 主题，仅保留 NXL；新增界面字体设置（Style Settings）；Orange Heart 默认界面字体统一为 MiSans；字体变量接入 Obsidian 内置 `--font-interface-override` / `--font-text-override`；移除图片居中开关；内置 MiSans 字体路径统一为 `NXL/fonts/` |
+| 2025-06 | —    | 重构字体架构：参照 Blue Topaz，`--font-text` 直接设置、`--font-interface` 不再覆盖、内容容器 `font-family: var(--font-text)`；修复 tooltip 矩形框问题（颜色改用 `--text-normal`，移除全局 `*` 过渡规则）                                                                    |
 
 *个人配置仓库，持续更新中。*
